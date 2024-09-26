@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тут что-то написано</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: sans-serif;
+      color: #a31800;
+        }
+        .wrapper {
+         height: calc(100vh - 100px);
+        padding: 50px 0 50px 50px;
+        background-image: url(images/fon.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-color: #253349;
+    }
+    header {
+      font-size: 0;
+      margin: 0 50px 50px 0;
+    }
+    h1, h3 {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      font-weight: 400;
+      margin: 0;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    h3 {
+      font-size: 3rem;
+      text-align: right;
+    }
+        div{
+            unicode-bidi: isolate;
+            display: block;
+        }
+        .container{
+            display: flex; 
+            width: 1800px;
+            padding-right: 50px;
+        }
+
+        .container__column{
+            display: flex; 
+            flex-direction: column; 
+            display: inline-block;
+            vertical-align: top;
+            height: 200px;
+            width: 340px;
+            
+        }
+        
+        .c4{
+            margin-left: 70px;
+        }
+
+        .container__column-element{
+            width: 320px;
+            height: 150px;
+            background-color: rgb(189, 68, 44);
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .small{
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            background-color: rgb(44, 150, 189);
+            
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+      <h1>Start</h1>
+      <h3>User</h3>
+    </header>
+        <div class="container">
+            <div class="container__column">
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+            </div>
+            <div class="container__column c2">
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+            </div>
+            <div class="container__column c3">
+                <div class="container__column-element small"></div>
+                <div class="container__column-element small"></div>
+                <div class="container__column-element small"></div>
+                <div class="container__column-element small"></div>
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+            </div>
+            <div class="container__column c4">
+                <div class="container__column-element"></div>
+                <div class="container__column-element"></div>
+                <div class="container__column-element small"></div>
+                <div class="container__column-element small"></div>
+                <div class="container__column-element small"></div>
+                <div class="container__column-element small"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
