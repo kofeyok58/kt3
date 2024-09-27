@@ -6,6 +6,10 @@
     <title>Тут что-то написано</title>
     <style>
         body {
+      background-image: url(images/fon.jpg);
+      background-size: 2000px 1800px;
+      background-repeat: no-repeat;
+      background-position: center;
       margin: 0;
       font-family: sans-serif;
       color: #a31800;
@@ -13,15 +17,6 @@
         .wrapper {
          height: calc(100vh - 100px);
         padding: 50px 0 50px 50px;
-        background-image: url(images/fon.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-color: #253349;
     }
     header {
       font-size: 0;
@@ -47,7 +42,7 @@
         }
         .container{
             display: flex; 
-            width: 1800px;
+            width: 100%;
             padding-right: 50px;
         }
 
@@ -68,19 +63,68 @@
         .container__column-element{
             width: 320px;
             height: 150px;
-            background-color: rgb(189, 68, 44);
+            background-color: rgba(203, 74, 48, 0.854);
             cursor: pointer;
             margin-bottom: 10px;
             margin-right: 10px;
+            
         }
         .small{
             width: 150px;
             height: 150px;
             display: inline-block;
-            background-color: rgb(44, 150, 189);
-            
+            background-color: rgba(48, 170, 214, 0.817);
         }
-        
+        .email{
+            background-image: url("images/email.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .celendar{
+            background-image: url("images/celendar.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .music{
+            background-image: url("images/music.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .mincraft{
+            background-image: url("images/mincraft.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .photos{
+            background-image: url("images/photos.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .weather{
+            background-image: url("images/weather.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .maps{
+            background-image: url("images/maps.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .messagine{
+            background-image: url("images/messagine.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .cortana{
+            background-image: url("images/cortana.png"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .onenote{
+            background-image: url("images/onenote.png"); 
+            background-size: cover;
+            background-position: center;
+        }
         
 
     </style>
@@ -93,32 +137,32 @@
     </header>
         <div class="container">
             <div class="container__column">
+                <div class="container__column-element email"></div>
+                <div class="container__column-element celendar"></div>
                 <div class="container__column-element"></div>
-                <div class="container__column-element"></div>
-                <div class="container__column-element"></div>
-                <div class="container__column-element"></div>
+                <div class="container__column-element messagine"></div>
             </div>
             <div class="container__column c2">
                 <div class="container__column-element"></div>
                 <div class="container__column-element"></div>
-                <div class="container__column-element"></div>
+                <div class="container__column-element music"></div>
                 <div class="container__column-element"></div>
             </div>
             <div class="container__column c3">
+                <div class="container__column-element small mincraft"></div>
                 <div class="container__column-element small"></div>
-                <div class="container__column-element small"></div>
-                <div class="container__column-element small"></div>
+                <div class="container__column-element small onenote"></div>
                 <div class="container__column-element small"></div>
                 <div class="container__column-element"></div>
-                <div class="container__column-element"></div>
+                <div class="container__column-element weather"></div>
             </div>
             <div class="container__column c4">
                 <div class="container__column-element"></div>
-                <div class="container__column-element"></div>
+                <div class="container__column-element photos"></div>
+                <div class="container__column-element small maps"></div>
+                <div class="container__column-element small "></div>
                 <div class="container__column-element small"></div>
-                <div class="container__column-element small"></div>
-                <div class="container__column-element small"></div>
-                <div class="container__column-element small"></div>
+                <div class="container__column-element small cortana"></div>
             </div>
         </div>
     </div>
